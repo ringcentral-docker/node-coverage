@@ -8,5 +8,5 @@ RUN node --version \
 
 RUN which diff2html || npm install -g -ignore-scripts  @nullcc/diff2html-cli || true
 RUN which istanbul-merge || npm install -g -ignore-scripts  istanbul-merge || true
-RUN npm i typescript-language-server && npm install  typescript && npm install --registry=http://nexus3-xmn02.lab.nordigy.ru/repository/npm-group/  @ringcentral/sdet-cli@2
+RUN npm i -g typescript-language-server && npm install -g typescript && npm install --unsafe-perm -g @nullcc/sdet-cli
 
